@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+.card-container {
+    width: 100%;
+    max-width: 520px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.top {
+    background-color: #801D24;
+    color: #ffffff;
+    padding: 40px 35px 65px 35px;
+    position: relative;  
+}
+.top .logo {
+    width: 75px;
+    height: 75px;
+    display: block;
+    margin-bottom: 22px;
+    object-fit: contain;
+}
+.top h1 {
+    font-size: 38px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+}
+.top h2 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000000;
+    margin-top: 3px;
+    margin-bottom: 22px;
+    line-height: 1.2;
+}
+.top p {
+    font-size: 11px;
+    line-height: 1.45;
+    color: #ffffff;
+    margin-bottom: 14px;
+    font-weight: 400;
+    text-align: justify;
+}
+.clubs {
+    padding: 35px 35px 15px 35px;
+    background-color: #ffffff;
+}
+.club-section {
+    margin-bottom: 28px;
+}
+.club-section h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+.club-section h2 img {
+    height: 22px;
+    width: auto;
+    object-fit: contain;
+}
+.club-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+}
+.club-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+.club-item img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    margin-bottom: 6px;
+}
+.club-item p {
+    font-size: 10px;
+    color: #801D24;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+}
+.club-item b {
+    color: #000000;
+    font-weight: 900;
+    display: block;
+    margin-top: 1px;
+}
+footer {
+    background-color: #801D24;
+    color: #ffffff;
+    padding: 35px 35px 55px 35px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: 0.3px;
+    text-transform: uppercase; 
+    position: relative;
+}
+.top::after,
+footer::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: 80px solid white;
+    border-left: 80px solid transparent;
+}
